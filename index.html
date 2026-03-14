@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Creative Developer</title>
+    <meta name="description" content="Modern, interactive portfolio showcasing web development projects and skills.">
+    <!-- Google Fonts: Outfit -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <!-- Remix Icons for modern, clean icons -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Abstract Background Elements -->
+    <div class="bg-shape shape-1"></div>
+    <div class="bg-shape shape-2"></div>
+
+    <!-- Navigation -->
+    <nav id="navbar">
+        <div class="nav-container">
+            <a href="#home" class="logo">Eben<span>.</span></a>
+            <div class="nav-links">
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <a href="#contact" class="btn btn-outline">Let's Talk</a>
+            <div class="mobile-menu-btn">
+                <i class="ri-menu-4-line"></i>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero section">
+            <div class="hero-content reveal">
+                <p class="greeting">Hello, I'm</p>
+                <h1 class="hero-title">Creative <span class="gradient-text">Developer</span></h1>
+                <p class="hero-subtitle">Building visually stunning, interactive, and high-performance digital experiences for the modern web.</p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">View My Work <i class="ri-arrow-right-line"></i></a>
+                    <a href="https://github.com" target="_blank" class="social-icon"><i class="ri-github-line"></i></a>
+                    <a href="https://linkedin.com" target="_blank" class="social-icon"><i class="ri-linkedin-line"></i></a>
+                    <a href="https://twitter.com" target="_blank" class="social-icon"><i class="ri-twitter-x-line"></i></a>
+                </div>
+            </div>
+            <div class="hero-visual reveal fade-right">
+                <div class="glass-card visual-card">
+                    <div class="code-snippet">
+                        <span class="keyword">const</span> <span class="variable">developer</span> = {
+                        <br>&nbsp;&nbsp;name: <span class="string">'Eben'</span>,
+                        <br>&nbsp;&nbsp;passion: <span class="string">'Building cool stuff'</span>,
+                        <br>&nbsp;&nbsp;coffeeCount: <span class="number">Infinity</span>
+                        <br>};
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about section">
+            <div class="section-badge reveal fade-up">About Me</div>
+            <h2 class="section-title reveal fade-up">Bridging design and engineering.</h2>
+            <div class="about-grid">
+                <div class="about-text reveal fade-up glow-effect">
+                    <p>I am a passionate software developer specializing in building exceptional digital experiences. I combine clean code with beautiful design to create products that users love.</p>
+                    <p>My journey started with a curiosity about how things work on the web, and it has evolved into a career focused on crafting scalable frontend applications and robust backend systems.</p>
+                    <div class="stats-container">
+                        <div class="stat-item">
+                            <h3>3+</h3>
+                            <p>Years Exp.</p>
+                        </div>
+                        <div class="stat-item">
+                            <h3>20+</h3>
+                            <p>Projects</p>
+                        </div>
+                        <div class="stat-item">
+                            <h3>100%</h3>
+                            <p>Commitment</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="skills section">
+            <div class="section-heading reveal fade-up">
+                <div class="section-badge">My Arsenal</div>
+                <h2 class="section-title">Technologies I work with</h2>
+            </div>
+            
+            <div class="skills-grid">
+                <!-- Frontend -->
+                <div class="skill-category glass-card reveal fade-up">
+                    <div class="category-header">
+                        <i class="ri-layout-3-line"></i>
+                        <h3>Frontend</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag">HTML5 / CSS3</span>
+                        <span class="skill-tag">JavaScript (ES6+)</span>
+                        <span class="skill-tag">React.js</span>
+                        <span class="skill-tag">Next.js</span>
+                        <span class="skill-tag">Tailwind CSS</span>
+                        <span class="skill-tag">Framer Motion</span>
+                    </div>
+                </div>
+                <!-- Backend -->
+                <div class="skill-category glass-card reveal fade-up" style="transition-delay: 100ms;">
+                    <div class="category-header">
+                        <i class="ri-server-line"></i>
+                        <h3>Backend</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Node.js</span>
+                        <span class="skill-tag">Express</span>
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">PostgreSQL</span>
+                        <span class="skill-tag">MongoDB</span>
+                        <span class="skill-tag">REST APIs</span>
+                    </div>
+                </div>
+                <!-- Tools -->
+                <div class="skill-category glass-card reveal fade-up" style="transition-delay: 200ms;">
+                    <div class="category-header">
+                        <i class="ri-tools-line"></i>
+                        <h3>Tools & Others</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Git / GitHub</span>
+                        <span class="skill-tag">Figma</span>
+                        <span class="skill-tag">Docker</span>
+                        <span class="skill-tag">AWS</span>
+                        <span class="skill-tag">Jest</span>
+                        <span class="skill-tag">Webpack</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="projects section">
+            <div class="section-heading reveal fade-up">
+                <div class="section-badge">Selected Work</div>
+                <h2 class="section-title">Bringing ideas to life.</h2>
+            </div>
+
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <article class="project-card glass-card reveal fade-up">
+                    <div class="project-image" style="background: linear-gradient(45deg, var(--primary), var(--secondary));">
+                        <div class="project-links">
+                            <a href="#" class="icon-btn"><i class="ri-github-fill"></i></a>
+                            <a href="#" class="icon-btn"><i class="ri-external-link-line"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-tags">
+                            <span>React</span>
+                            <span>Node.js</span>
+                            <span>MongoDB</span>
+                        </div>
+                        <h3 class="project-title">FinTutor Platform</h3>
+                        <p class="project-desc">A comprehensive online tutoring platform for finance professionals, featuring video conferencing, scheduling, and payment integration.</p>
+                    </div>
+                </article>
+
+                <!-- Project 2 -->
+                <article class="project-card glass-card reveal fade-up" style="transition-delay: 100ms;">
+                    <div class="project-image" style="background: linear-gradient(135deg, #10b981, #0ea5e9);">
+                        <div class="project-links">
+                            <a href="#" class="icon-btn"><i class="ri-github-fill"></i></a>
+                            <a href="#" class="icon-btn"><i class="ri-external-link-line"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-tags">
+                            <span>Next.js</span>
+                            <span>Tailwind</span>
+                            <span>Supabase</span>
+                        </div>
+                        <h3 class="project-title">Audit Fee Analyzer</h3>
+                        <p class="project-desc">A data management tool for auditing fees, allowing users to import Excel sheets, analyze data, and generate interactive reports.</p>
+                    </div>
+                </article>
+
+                 <!-- Project 3 -->
+                 <article class="project-card glass-card reveal fade-up" style="transition-delay: 200ms;">
+                    <div class="project-image" style="background: linear-gradient(to right, #f43f5e, #8b5cf6);">
+                        <div class="project-links">
+                            <a href="#" class="icon-btn"><i class="ri-github-fill"></i></a>
+                            <a href="#" class="icon-btn"><i class="ri-external-link-line"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-tags">
+                            <span>Vue.js</span>
+                            <span>Firebase</span>
+                            <span>Sass</span>
+                        </div>
+                        <h3 class="project-title">Xplore Travel Companion</h3>
+                        <p class="project-desc">A social travel application that helps users plan itineraries, discover local gems, and connect with other travelers.</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact section">
+            <div class="contact-container glass-card reveal fade-up">
+                <div class="contact-content">
+                    <div class="section-badge">What's Next?</div>
+                    <h2 class="section-title">Get In Touch</h2>
+                    <p class="contact-desc">I'm currently looking for new opportunities. Whether you have a question, a project idea, or just want to say hi, I'll try my best to get back to you!</p>
+                    
+                    <a href="mailto:hello@example.com" class="btn btn-primary" style="margin-top: 2rem;">
+                        <i class="ri-mail-send-line"></i> Say Hello
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <a href="#home" class="logo">Eben<span>.</span></a>
+            <p>Designed & Built meticulously.</p>
+            <div class="footer-socials">
+                <a href="#"><i class="ri-github-line"></i></a>
+                <a href="#"><i class="ri-linkedin-line"></i></a>
+                <a href="#"><i class="ri-twitter-x-line"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
